@@ -94,7 +94,12 @@ public class CarrinhoCompras {
 	 * @return BigDecimal
 	 */
 	public BigDecimal getValorTotal() {
-		return item.getValorTotal();
+		BigDecimal valorTotal = BigDecimal.ZERO;
+        for (Item item : itens) {
+            BigDecimal valorItem = item.getValorTotal();
+            valorTotal = valorTotal.add(valorItem);
+        }
+        return valorTotal;
 	}
 
 	/**
