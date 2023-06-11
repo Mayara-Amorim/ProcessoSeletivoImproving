@@ -9,10 +9,10 @@ import java.util.Map;
  */
 public class CarrinhoComprasFactory {
 
-	private Map<String, CarrinhoCompras> carrinhos;
+	private Map<String, CarrinhoCompras> carrinhos = new HashMap<>();
 	
 	public CarrinhoComprasFactory() {
-		this.carrinhos = new HashMap<>();
+		
 	}
 	
 
